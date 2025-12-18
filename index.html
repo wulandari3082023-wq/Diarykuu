@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Diary Harian Nailong</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- LOGIN -->
+  <div id="loginCard" class="card">
+    <h1>Login Diary Nailong 🦕</h1>
+    <input type="text" id="username" placeholder="Masukkan username">
+    <input type="password" id="password" placeholder="Masukkan password">
+    <button onclick="login()">Login</button>
+  </div>
+
+  <!-- DIARY -->
+  <div id="diaryCard" class="hidden">
+    <div class="card">
+      <h1>Diary Harian Nailong 📔</h1>
+      <textarea id="diaryText" placeholder="Tulis diary hari ini..."></textarea>
+      <input type="file" id="imageInput" accept="image/*">
+      <button onclick="saveDiary()">Simpan Diary</button>
+      <button class="logout" onclick="logout()">Logout</button>
+    </div>
+
+    <div id="diaryList"></div>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
